@@ -9,3 +9,4 @@ CCScrollerScene for Cocos2d Games
 //  [scroller initBackgroundWithSpriteName:@"background.png" verticalPosition:ccp(0, 0)];
 //  [self addChild:scroller];
 //  [scroller startScroller];
+
