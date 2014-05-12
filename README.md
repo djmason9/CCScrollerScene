@@ -18,6 +18,7 @@ ScrollingScene *scroller = [ScrollingScene scene];
 
 
 To stop scroller call
+
 [self unscheduleAllSelectors];
 
 
