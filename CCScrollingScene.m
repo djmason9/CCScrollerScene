@@ -26,7 +26,7 @@
     //second background
     _scrollingBackground2 =  [CCSprite spriteWithImageNamed:background];
     _scrollingBackground2.anchorPoint = ccp(0,0);
-    _scrollingBackground2.position = ccp(_screenWidth,pos.y);
+    _scrollingBackground2.position = ccp([_scrollingBackground1 boundingBox].size.width,pos.y);
     [self addChild:_scrollingBackground2];
     
 }
