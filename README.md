@@ -24,6 +24,6 @@ Simply set the sprite image and the speeds, then call start scroller (DONE)
 <b>Optional:</b>
 <pre>
 <var>//change the speed of the interval</var>
-<code>[scroller setIntervalSpeed:0.002];</code></pre>
-
+<code>[scroller setIntervalSpeed:0.002];
+    [scroller setScrollSpeed:2];</code></pre>
 
