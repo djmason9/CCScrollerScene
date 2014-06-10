@@ -11,10 +11,10 @@ Simply set the sprite image and the speeds, then call start scroller (DONE)
 ScrollingScene *scroller = [ScrollingScene scene];</code>
 <p/>//set background image name, screen pos and scale <br/>
 <code>
-[scroller initBackgroundWithSpriteName:@"background.png" verticalPosition:ccp(0, 0) usingScale:1];<br/>
-</br>
+[scroller initBackgroundWithSpriteName:@"background.png" verticalPosition:ccp(0, 0) usingScale:1];
+
 [self addChild:scroller];
-</br>
+
 [scroller startScroller];</code>
 <p/>
 To stop scroller call<br/>
