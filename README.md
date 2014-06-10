@@ -24,7 +24,9 @@ To stop scroller call
 
 
 Optional:
+
 //change the speed of the interval
+
 [scroller setIntervalSpeed:0.002];
 
 
