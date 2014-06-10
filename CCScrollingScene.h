@@ -42,10 +42,10 @@ darren@mypocket-technologies.com
 /**
  * Add these default values to your .pch file
  */
-//#define ORIENTATION_PORTRAIT 0
-//#define ORIENTATION_LANDSCAPE 1
-//#define SCROLL_SPEED 1.5
-//#define INTERVAL 0.007
+#define ORIENTATION_PORTRAIT 0
+#define ORIENTATION_LANDSCAPE 1
+#define SCROLL_SPEED 1.5
+#define INTERVAL 0.007
 
 
 @interface CCScrollingScene : CCScene {
@@ -68,8 +68,9 @@ darren@mypocket-technologies.com
  * Inits a background by using a sprite and a width
  * @param background
  * @param orientation
+ * @param scale
  */
--(void)initBackgroundWithSpriteName:(NSString*)background verticalPosition:(CGPoint)pos;
+-(void)initBackgroundWithSpriteName:(NSString*)background verticalPosition:(CGPoint)pos usingScale:(CGFloat)scale;
 /**
  * Start scrolling background with delay Interval set as constant
  */

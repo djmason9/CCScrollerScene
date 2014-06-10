@@ -15,17 +15,18 @@
 
 }
 
--(void)initBackgroundWithSpriteName:(NSString*)background verticalPosition:(CGPoint)pos{
-
+-(void)initBackgroundWithSpriteName:(NSString*)background verticalPosition:(CGPoint)pos usingScale:(CGFloat)scale{
     
     _scrollingBackground1 = [CCSprite spriteWithImageNamed:background];
     _scrollingBackground1.anchorPoint = ccp(0,0);
+    _scrollingBackground1.scale = scale;
     _scrollingBackground1.position = pos;
     [self addChild:_scrollingBackground1];
     
     //second background
     _scrollingBackground2 =  [CCSprite spriteWithImageNamed:background];
     _scrollingBackground2.anchorPoint = ccp(0,0);
+    _scrollingBackground2.scale = scale;
     _scrollingBackground2.position = ccp([_scrollingBackground1 boundingBox].size.width,pos.y);
     [self addChild:_scrollingBackground2];
     
