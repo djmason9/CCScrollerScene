@@ -15,10 +15,10 @@ Simply set the sprite image and the speeds, then call start scroller (DONE)
 
 <code>[self addChild:scroller];
 
+//start the scrolling
 [scroller startScroller];</code>
-<p/>
-//To stop scroller call
 
+//To stop scroller call
 <code>[self unscheduleAllSelectors];</code>
 </pre>
 <p>
