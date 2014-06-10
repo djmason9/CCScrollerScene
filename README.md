@@ -6,24 +6,24 @@ CCScrollerScene for Cocos2d Games
 This class can easily make a scrolling background for any iphone game.
 Simply set the sprite image and the speeds, then call start scroller (DONE)
 
-<b>-- USAGE --</b><p>
+<b>Usage:</b><p>
 <pre>
 <code>ScrollingScene *scroller = [ScrollingScene scene];</code>
-<p/>//set background image name, screen pos and scale
+<var>//set background image name, screen pos and scale</var>
 <code>[scroller initBackgroundWithSpriteName:@"background.png" verticalPosition:ccp(0, 0) usingScale:1];</code>
 
 <code>[self addChild:scroller];
 
-//start the scrolling
+<var>//start the scrolling</var>
 [scroller startScroller];</code>
 
-//To stop scroller call
+<var>//To stop scroller call</var>
 <code>[self unscheduleAllSelectors];</code>
 </pre>
 <p>
 <b>Optional:</b>
 <pre>
-//change the speed of the interval
+<var>//change the speed of the interval</var>
 <code>[scroller setIntervalSpeed:0.002];</code></pre>
 
 
