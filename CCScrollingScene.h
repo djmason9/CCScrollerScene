@@ -1,5 +1,11 @@
 /*
 ScrollingScene.h
+ 
+Created by Mason, Darren J on 5/12/14.
+Copyright 2014 Darren Mason. All rights reserved.
+darren@mypocket-technologies.com
+ 
+ 
 This class can make a scrolling background for any iphone game.
 Simply set the sprite image and the speeds, then call start scroller (DONE)
 
@@ -25,13 +31,10 @@ THE SOFTWARE.
   -- USAGE --
 
   ScrollingScene *scroller = [ScrollingScene scene];
-  [scroller initBackgroundWithSpriteName:@"background.png" verticalPosition:ccp(0, 0)];
+  [scroller initBackgroundWithSpriteName:@"background.png" verticalPosition:ccp(0, 0) usingScale:0.5];
   [self addChild:scroller];
   [scroller startScroller];
 
-Created by Mason, Darren J on 5/12/14.
-Copyright 2014 Darren Mason. All rights reserved.
-darren@mypocket-technologies.com
 
 ****************************************************************************/
 #import <Foundation/Foundation.h>
