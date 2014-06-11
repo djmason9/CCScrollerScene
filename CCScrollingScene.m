@@ -32,6 +32,9 @@
     
 }
 
+-(void)stopScroller{
+    [self unscheduleAllSelectors];
+}
 -(void)startScroller{
     
     [self schedule:@selector(scrollBackground:) interval:_intervalSpeed];

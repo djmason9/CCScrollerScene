@@ -76,11 +76,15 @@ darren@mypocket-technologies.com
  */
 -(void)startScroller;
 /**
+ * Stop scrolling background
+ */
+-(void)stopScroller;
+/**
  * Static init object
  */
 + (CCScrollingScene *)scene;
 /**
- * Called by static scene
+ * Called by static scene or directly
  */
 - (id)init;
 
