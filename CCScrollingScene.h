@@ -1,11 +1,11 @@
 /*
 ScrollingScene.h
- 
+
 Created by Mason, Darren J on 5/12/14.
 Copyright 2014 Darren Mason. All rights reserved.
 darren@mypocket-technologies.com
- 
- 
+
+
 This class can make a scrolling background for any iphone game.
 Simply set the sprite image and the speeds, then call start scroller (DONE)
 
@@ -59,11 +59,23 @@ THE SOFTWARE.
 //            OVERRIDE THE DEFAULT SPEEDS              //
 // --------------------------------------------------- //
 
-// This is the amount of movement the sprite will move during each interval.
+/**
+ * This is the amount of movement the sprite will move during each interval.
+ */
 @property(nonatomic, readwrite) CGFloat scrollSpeed;
-
-// This is the speed in which the background loop is called.
+/**
+ * This is the speed in which the background loop is called.
+ */
 @property(nonatomic,readwrite) CGFloat intervalSpeed;
+/**
+ * used to determine if youre scrolling horizontal or vertical (default horizontal)
+ */
+@property(nonatomic, readwrite) BOOL isVertical;
+/**
+ * used for incremental scrolling only
+ */
+@property(nonatomic, readwrite) BOOL isRepeat;
+
 
 // --------------------------------------------------- //
 
@@ -73,7 +85,11 @@ THE SOFTWARE.
  * @param orientation
  * @param scale
  */
--(void)initBackgroundWithSpriteName:(NSString*)background verticalPosition:(CGPoint)pos usingScale:(CGFloat)scale;
+-(void)initBackgroundWithSpriteName:(NSString*)background position:(CGPoint)pos usingScale:(CGFloat)scale;
+/**
+ * Scrolls to a given postion
+ */
+-(void)scrollIncrement:(CGPoint)amount;
 /**
  * Start scrolling background with delay Interval set as constant
  */
